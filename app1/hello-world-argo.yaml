@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: hello-world
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -33,4 +33,3 @@ spec:
     - protocol: TCP
       targetPort: 5000
       port: 5000
-  type: LoadBalancer
